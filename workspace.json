@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "callback-to-async-iterable": "packages/callback-to-async-iterable"
+  }
+}
