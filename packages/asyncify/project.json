@@ -1,0 +1,33 @@
+{
+  "root": "packages/asyncify",
+  "sourceRoot": "packages/asyncify/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/asyncify",
+        "main": "packages/asyncify/src/index.ts",
+        "tsConfig": "packages/asyncify/tsconfig.lib.json",
+        "assets": ["packages/asyncify/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/asyncify/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/asyncify"],
+      "options": {
+        "jestConfig": "packages/asyncify/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

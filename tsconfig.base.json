@@ -8,15 +8,15 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "esnext",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@callback-to-async-iterable//callback-to-async-iterable": [
-        "packages/callback-to-async-iterable/src/index.ts"
+      "@callback-to-async-iterable//asyncify": [
+        "packages/asyncify/src/index.ts"
       ]
     }
   },
